@@ -1,3 +1,5 @@
+package modelo;
+
 public class QuartoStandard extends Quarto{
 
     public QuartoStandard(int numero){

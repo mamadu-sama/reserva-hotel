@@ -1,3 +1,7 @@
+package servico;
+
+import modelo.*;
+
 public class Hotel {
     private String nome;
     private Quarto[] quartos;
@@ -58,14 +62,14 @@ public class Hotel {
      }
      Quarto quarto = encontrarQuarto(numeroQuarto);
      if (quarto == null){
-         System.out.println("Quarto " + numeroQuarto + "Não existe.");
+         System.out.println("modelo.Quarto " + numeroQuarto + "Não existe.");
          return  null;
      }
      try {
 
          Reserva reserva = new Reserva(hospede, quarto, dataEntrada, noites);
          reservas[totalReservas++] = reserva;
-         System.out.println("Reserva criada com sucesso: #" + reserva.getId());
+         System.out.println("modelo.Reserva criada com sucesso: #" + reserva.getId());
          return reserva;
 
      } catch (IllegalArgumentException e) {
@@ -82,7 +86,7 @@ public class Hotel {
                 return ;
             }
         }
-        System.out.println("Reserva #" + idReserva + " não encontrado");
+        System.out.println("modelo.Reserva #" + idReserva + " não encontrado");
     }
 
     public void listarReservasActivas() {

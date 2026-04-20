@@ -1,3 +1,5 @@
+package modelo;
+
 public class QuartoSuite extends Quarto {
 
     public QuartoSuite(int numero){

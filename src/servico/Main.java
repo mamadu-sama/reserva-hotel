@@ -1,12 +1,15 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import modelo.Hospedes;
+import servico.Hotel;
+
 import java.util.Scanner;
 
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
 
-    Hotel hotel = new Hotel("Hotel Atlântico");
+    Hotel hotel = new Hotel("servico.Hotel Atlântico");
     Scanner scanner = new Scanner(System.in);
 
     boolean continuar = true;

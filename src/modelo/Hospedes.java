@@ -1,3 +1,5 @@
+package modelo;
+
 public class Hospedes {
 
     private String nome;

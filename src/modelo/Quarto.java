@@ -1,9 +1,10 @@
+package modelo;
 
 /**
- * Representa um quarto do Hotel Atlântico.
+ * Representa um quarto do servico.Hotel Atlântico.
  * Cada quarto tem um número único, um preço por noite e um estado
  * (livre ou ocupado). Esta classe é abstracta: não pode ser instanciada
- * directamente. Usa QuartoStandard, QuartoSuite ou QuartoPresidencial.
+ * directamente. Usa modelo.QuartoStandard, modelo.QuartoSuite ou modelo.QuartoPresidencial.
  */
 public abstract class Quarto {
     private int numero;
@@ -56,7 +57,7 @@ public abstract class Quarto {
 
     @Override
     public String toString() {
-        return "Quarto{" +
+        return "modelo.Quarto{" +
                 "numero=" + numero +
                 ", precoPorNoite=" + precoPorNoite +
                 ", ocupado=" + ocupado +

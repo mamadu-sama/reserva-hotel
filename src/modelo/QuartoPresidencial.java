@@ -1,3 +1,5 @@
+package modelo;
+
 public class QuartoPresidencial extends  Quarto{
 
     private String nomePatrocinador;

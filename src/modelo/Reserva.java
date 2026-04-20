@@ -1,3 +1,5 @@
+package modelo;
+
 public class Reserva {
     private int id;
     private Hospedes hospede;
@@ -41,20 +43,20 @@ public class Reserva {
 
     public void cancelar(){
         if ((!activa)){
-            System.out.println("Reserva #" + id + " já estava cancelada.");
+            System.out.println("modelo.Reserva #" + id + " já estava cancelada.");
             return;
         }
         this.activa = false;
         this.quarto.libertar(); // liberta o quarto
-        System.out.println("Reserva #" + id + " cancelada. Quarto " + quarto.getNumero() + " agora livre.");
+        System.out.println("modelo.Reserva #" + id + " cancelada. modelo.Quarto " + quarto.getNumero() + " agora livre.");
     }
     @Override
     public String toString() {
         String estado = activa ? "ACTIVA" : "CANCELADA";
         return String.format(
-                "Reserva #%d [%s]%n" +
+                "modelo.Reserva #%d [%s]%n" +
                         "  Hóspede: %s%n" +
-                        "  Quarto: %s%n" +
+                        "  modelo.Quarto: %s%n" +
                         "  Entrada: %s | %d noite(s)%n" +
                         "  Total: %.2f€",
                 id, estado,
